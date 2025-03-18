@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "PCA"
+  site-url: "https://Maryam-Sargol.github.io/PCA"
+  description: "This code runs PCA on data from given morphed models"
+  repo-branch: main
+  repo-url: "https://github.com/Maryam-Sargol/PCA"
