@@ -13,5 +13,4 @@ d = { 'settings': { 'branch': 'main',
             'PCA.main_pca': {},
             'PCA.pca': {'PCA.pca.run_PCA': ('pca.html#run_pca', 'PCA/pca.py')},
             'PCA.read_extract': { 'PCA.read_extract.read_extract_nodes_shells': ( 'read_extract.html#read_extract_nodes_shells',
-                                                                                  'PCA/read_extract.py')},
-            'PCA.start': {'PCA.start.foo': ('start.html#foo', 'PCA/start.py')}}}
+                                                                                  'PCA/read_extract.py')}}}
