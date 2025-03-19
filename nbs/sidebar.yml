@@ -9,4 +9,3 @@ website:
       - 04_export_key.ipynb
       - 05_export_file_mix.ipynb
       - 06_main_pca.ipynb
-      - 20_start.ipynb
