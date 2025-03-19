@@ -5,4 +5,6 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Maryam-Sargol.github.io',
                 'git_url': 'https://github.com/Maryam-Sargol/PCA',
                 'lib_path': 'PCA'},
-  'syms': {'PCA.start': {'PCA.start.foo': ('start.html#foo', 'PCA/start.py')}}}
+  'syms': { 'PCA.extract_NSH_stl_key': { 'PCA.extract_NSH_stl_key.extract_nodes_shells_mix_stl_key': ( 'extract_nsh_stl_key.html#extract_nodes_shells_mix_stl_key',
+                                                                                                       'PCA/extract_NSH_stl_key.py')},
+            'PCA.start': {'PCA.start.foo': ('start.html#foo', 'PCA/start.py')}}}

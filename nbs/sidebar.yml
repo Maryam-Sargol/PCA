@@ -2,4 +2,5 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - 00_start.ipynb
+      - 00_extract_NSH_stl_key.ipynb
+      - 20_start.ipynb
