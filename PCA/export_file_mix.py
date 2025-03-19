@@ -7,7 +7,7 @@ __all__ = ['export_file']
 
 # %% ../nbs/05_export_file_mix.ipynb 3
 import trimesh
-from PCA_morphed_model.export_key import export_key_file
+from .export_key import export_key_file
 import numpy as np
 import glob
 import os

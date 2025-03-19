@@ -9,7 +9,7 @@ __all__ = ['read_extract_nodes_shells']
 import glob
 import os
 import numpy as np
-from PCA_morphed_model.extract_NSH_stl_key import extract_nodes_shells_mix_stl_key
+from .extract_NSH_stl_key import extract_nodes_shells_mix_stl_key
 
 
 

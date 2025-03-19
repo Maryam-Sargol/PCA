@@ -6,10 +6,10 @@
 __all__ = ['input_dir', 'output_dir', 'data_array', 'shells', 'id_nodes', 'pca_index', 'k']
 
 # %% ../nbs/06_main_pca.ipynb 3
-from PCA_morphed_model.read_extract import read_extract_nodes_shells
-from PCA_morphed_model.pca import run_PCA 
-from PCA_morphed_model.STD import desired_STD
-from PCA_morphed_model.export_file_mix import export_file
+from .read_extract import read_extract_nodes_shells
+from .pca import run_PCA 
+from .STD import desired_STD
+from .export_file_mix import export_file
 import numpy as np
 
 # %% ../nbs/06_main_pca.ipynb 4
