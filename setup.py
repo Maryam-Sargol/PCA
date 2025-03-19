@@ -26,6 +26,14 @@ py_versions = '3.6 3.7 3.8 3.9 3.10 3.11 3.12'.split()
 
 requirements = shlex.split(cfg.get('requirements', ''))
 if cfg.get('pip_requirements'): requirements += shlex.split(cfg.get('pip_requirements', ''))
+if 'numpy' not in requirements:
+    requirements.append('numpy')
+if 'trimesh' not in requirements:
+    requirements.append('trimesh')
+if 'matplotlib' not in requirements:
+    requirements.append('matplotlib')
+if 'scikit-learn' not in requirements:
+    requirements.append('scikit-learn')
 min_python = cfg['min_python']
 lic = licenses.get(cfg['license'].lower(), (cfg['license'], None))
 dev_requirements = (cfg.get('dev_requirements') or '').split()

@@ -3,4 +3,10 @@ website:
     contents:
       - index.ipynb
       - 00_extract_NSH_stl_key.ipynb
+      - 01_read_extract.ipynb
+      - 02_pca.ipynb
+      - 03_STD.ipynb
+      - 04_export_key.ipynb
+      - 05_export_file_mix.ipynb
+      - 06_main_pca.ipynb
       - 20_start.ipynb
