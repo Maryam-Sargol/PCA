@@ -5,4 +5,5 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://Maryam-Sargol.github.io',
                 'git_url': 'https://github.com/Maryam-Sargol/PCA',
                 'lib_path': 'PCA'},
-  'syms': {'PCA.core': {'PCA.core.foo': ('core.html#foo', 'PCA/core.py')}}}
+  'syms': { 'PCA.core': {'PCA.core.foo': ('core.html#foo', 'PCA/core.py')},
+            'PCA.start': {'PCA.start.foo': ('core.html#foo', 'PCA/start.py')}}}
