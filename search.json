@@ -1,0 +1,102 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PCA",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "PCA"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "PCA",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall PCA in Development mode\n# make sure PCA package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to PCA\n$ nbdev_prepare",
+    "crumbs": [
+      "PCA"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "PCA",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/Maryam-Sargol/PCA.git\nor from conda\n$ conda install -c Maryam-Sargol PCA\nor from pypi\n$ pip install PCA\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "PCA"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "PCA",
+    "section": "How to use",
+    "text": "How to use",
+    "crumbs": [
+      "PCA"
+    ]
+  },
+  {
+    "objectID": "export_key.html",
+    "href": "export_key.html",
+    "title": "Export .key files",
+    "section": "",
+    "text": "source\n\nexport_key_file\n\n export_key_file (coordinates:list[list[float]], shells_array:&lt;built-\n                  infunctionarray&gt;, id_nodes:list[int],\n                  file_name:list[str])\n\nThis function creates a key file with given coordinates and shell elements.\n\n\n\n\n\n\n\n\n\nType\nDetails\n\n\n\n\ncoordinates\nlist\ncoordinates of nodes\n\n\nshells_array\narray\nshells of morphed model, each shell enclosed by nodes\n\n\nid_nodes\nlist\nid of nodes of morphed model\n\n\nfile_name\nlist\nnew file name",
+    "crumbs": [
+      "Export .key files"
+    ]
+  },
+  {
+    "objectID": "read_extract.html",
+    "href": "read_extract.html",
+    "title": "Extract data from input files",
+    "section": "",
+    "text": "source\n\nread_extract_nodes_shells\n\n read_extract_nodes_shells (input_dir:str)\n\nReads STL or KEY files from a directory and extracts node coordinates, node ids and shell elements.\n\n\n\n\nType\nDetails\n\n\n\n\ninput_dir\nstr\ninput directory",
+    "crumbs": [
+      "Extract data from input files"
+    ]
+  },
+  {
+    "objectID": "extract_nsh_stl_key.html",
+    "href": "extract_nsh_stl_key.html",
+    "title": "Extract nodes and shells",
+    "section": "",
+    "text": "source\n\nextract_nodes_shells_mix_stl_key\n\n extract_nodes_shells_mix_stl_key (file_path:str)\n\nextracts nodes and shells from given files, only .stl and .key files are accepted\n\n\n\n\nType\nDetails\n\n\n\n\nfile_path\nstr\npath of morphed files",
+    "crumbs": [
+      "Extract nodes and shells"
+    ]
+  },
+  {
+    "objectID": "pca.html",
+    "href": "pca.html",
+    "title": "PCA run",
+    "section": "",
+    "text": "source\n\nrun_PCA\n\n run_PCA (data_array:&lt;built-infunctionarray&gt;)\n\nruns PCA, steps: 1: Standardizes the data 2: Runs PCA 3: Extracts Coefficients (Loadings), Scores and pca_mean 4: Plots the histogram and cumulative of the PCA explained variance ratio\n\n\n\n\nType\nDetails\n\n\n\n\ndata_array\narray\narray containing coordinates of nodes",
+    "crumbs": [
+      "PCA run"
+    ]
+  },
+  {
+    "objectID": "std.html",
+    "href": "std.html",
+    "title": "STD calculation",
+    "section": "",
+    "text": "source\n\ndesired_STD\n\n desired_STD (coefficients:&lt;built-infunctionarray&gt;, pca_mean:&lt;built-\n              infunctionarray&gt;, scores:&lt;built-infunctionarray&gt;,\n              pca_index:int, k:int)\n\nThis function explains how much the data will change along specific pc by standard deviation.\n\n\n\n\nType\nDetails\n\n\n\n\ncoefficients\narray\nPCA-coefficients\n\n\npca_mean\narray\nPCA-mean\n\n\nscores\narray\nPCA-scores\n\n\npca_index\nint\nThe component you want to evaluate (starts from 0)\n\n\nk\nint\ndesired scaling factor",
+    "crumbs": [
+      "STD calculation"
+    ]
+  },
+  {
+    "objectID": "export_file_mix.html",
+    "href": "export_file_mix.html",
+    "title": "Export results",
+    "section": "",
+    "text": "source\n\nexport_file\n\n export_file (input_dir:str, output_dir:str,\n              coordinates_pos:list[list[float]],\n              coordinates_neg:list[list[float]],\n              coordinates_mean:list[list[float]], shells:&lt;built-\n              infunctionarray&gt;, id_nodes:list[int], k:int)\n\nThis function export .stl or .key file for three kind of coordinates (positive, negative, mean)\n\n\n\n\n\n\n\n\n\nType\nDetails\n\n\n\n\ninput_dir\nstr\ninput directory\n\n\noutput_dir\nstr\noutput directory\n\n\ncoordinates_pos\nlist\nnew coordinates with positive k.std\n\n\ncoordinates_neg\nlist\nnew coordinates with negetive k.std\n\n\ncoordinates_mean\nlist\nnew coordinates with k = 0\n\n\nshells\narray\nshells of morphed model, each shell enclosed by nodes\n\n\nid_nodes\nlist\nid of nodes of morphed model\n\n\nk\nint\ndesired scaling factor",
+    "crumbs": [
+      "Export results"
+    ]
+  }
+]
